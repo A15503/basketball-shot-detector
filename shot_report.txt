@@ -1,0 +1,11 @@
+BASKETBALL SHOT ANALYSIS REPORT
+========================================
+Release Frame: 62
+Overall Score: 2/5
+
+[!!] Elbow angle: 138.7 deg — Too straight, keep elbow bent at release
+[!!] Knee bend: 151.9 deg — Bend knees more for better power
+[!!] Wrist follow through: 172.2 deg — Snap wrist down more (goose neck)
+[OK] Elbow alignment: 0.008 — Elbow nicely under the ball!
+[OK] Body alignment: 0.005 — Good straight form!
+========================================

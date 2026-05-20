@@ -1,0 +1,8 @@
+venv/
+*.mp4
+*.jpg
+*.png
+short_report_text
+release_frame.jpg
+__pycache__/
+*.pyc
