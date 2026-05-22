@@ -161,6 +161,20 @@ def analyze_video(video_path, progress_bar):
 
     cap.release()
 
+    # ─── Smooth wrist tracking ────────────────────────────────────
+    smoothed = []
+    for i in range(len(wrist_y_per_frame)):
+        if i < 2:
+            smoothed.append(wrist_y_per_frame[i])
+        else:
+            frame_num = wrist_y_per_frame[i][0]
+            y1 = wrist_y_per_frame[i-2][1]
+            y2 = wrist_y_per_frame[i-1][1]
+            y3 = wrist_y_per_frame[i][1]
+            avg_y = (y1 + y2 + y3) / 3
+            smoothed.append((frame_num, avg_y))
+    wrist_y_per_frame = smoothed
+
     # Find release frame
     biggest_drop = 0
     release_frame = 0
