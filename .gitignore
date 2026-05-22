@@ -2,7 +2,8 @@ venv/
 *.mp4
 *.jpg
 *.png
-short_report_text
+*.task
+shot_report.txt
 release_frame.jpg
 __pycache__/
 *.pyc
